@@ -39,7 +39,8 @@ app.use((req, res, next) => {
  * Route with documentation to build your project with prismic
  */
 app.route('/').get((req, res) => {
-  res.render('index')
+  req.prismic.api.getByUID('page', 'quickstart')
+    .then((document) => res.render('index', { document }))
 })
 
 /*

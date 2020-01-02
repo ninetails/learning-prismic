@@ -1,6 +1,6 @@
 module.exports = {
 
-  apiEndpoint: 'https://server.prismic.io/api/v2',
+  apiEndpoint: 'https://ninetails-testing.prismic.io/api/v2',
 
   // -- Access token if the Master is not open
   // accessToken: 'xxxxxx',
