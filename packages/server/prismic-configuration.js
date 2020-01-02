@@ -1,13 +1,16 @@
 module.exports = {
 
-  apiEndpoint: 'https://ninetails-testing.prismic.io/api/v2',
+  apiEndpoint: process.env.PRISMIC_API_ENDPOINT,
 
   // -- Access token if the Master is not open
   // accessToken: 'xxxxxx',
+  accessToken: process.env.PRISMIC_ACCESS_TOKEN,
 
   // OAuth
   // clientId: 'xxxxxx',
   // clientSecret: 'xxxxxx',
+  clientId: process.env.PRISMIC_CLIENT_ID,
+  clientSecret: process.env.PRISMIC_CLIENT_SECRET,
 
   // -- Links resolution rules
   // This function will be used to generate links to Prismic.io documents
