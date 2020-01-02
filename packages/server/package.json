@@ -1,0 +1,39 @@
+{
+  "name": "nodejs-sdk",
+  "version": "2.1.0",
+  "private": true,
+  "repository": "github:ninetails/learning-prismic",
+  "engines": {
+    "node": ">=4.8.1",
+    "npm": ">=2.15.11"
+  },
+  "devDependencies": {
+    "babel-eslint": "~10.0.3",
+    "eslint": "~6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "body-parser": "~1.19.0",
+    "debug": "~4.1.1",
+    "errorhandler": "~1.5.1",
+    "express": "~4.17.1",
+    "method-override": "~3.0.0",
+    "morgan": "~1.9.1",
+    "prismic-dom": "~2.1.0",
+    "prismic-javascript": "~2.1.5",
+    "pug": "~2.0.4",
+    "request": "~2.88.0",
+    "serve-favicon": "~2.5.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "lint": "eslint *.js",
+    "test": "node -c *.js"
+  }
+}
